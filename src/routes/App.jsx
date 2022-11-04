@@ -12,9 +12,13 @@ import MyAccount from "../pages/MyAccount";
 import NewPassword from "../pages/NewPassword";
 import Orders from "../pages/Orders";
 import SendEmail from "../pages/SendEmail";
-
+import AppContext from "../context/AppContext";
+import useInitialState from '../hooks/useInitialState';
 const App = () => {
+  const initialState = useInitialState();
+
   return (
+    <AppContext.Provider value={initialState}>
     <BrowserRouter>
       <Layout>
         <Routes>
@@ -31,6 +35,7 @@ const App = () => {
         </Routes>
       </Layout>
     </BrowserRouter>
+    </AppContext.Provider>
   );
 };
 
