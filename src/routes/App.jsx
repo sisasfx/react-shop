@@ -14,6 +14,11 @@ import Orders from "../pages/Orders";
 import SendEmail from "../pages/SendEmail";
 import AppContext from "../context/AppContext";
 import useInitialState from '../hooks/useInitialState';
+import ClothesList from "../containers/ClothesList";
+import ElectronicList from "../containers/ElectronicList";
+import FurnitureList from "../containers/FurnitureList";
+import ToysList from "../containers/ToysList";
+
 const App = () => {
   const initialState = useInitialState();
 
@@ -23,6 +28,10 @@ const App = () => {
       <Layout>
         <Routes>
           <Route exact path="/" element={<Home/>} />
+          <Route exact path="/clothes" element={<ClothesList />}/>
+          <Route exact path="/electronic" element={<ElectronicList />}/>
+          <Route exact path="/furniture" element={<FurnitureList />}/>
+          <Route exact path="/toys" element={<ToysList />} />
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/recovery-password" element={<RecoveryPassword/>} />
           <Route exact path="/checkout" element={<Checkout/>} />

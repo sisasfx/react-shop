@@ -6,6 +6,7 @@ import menu from '@icons/icon_menu.svg'
 import logo from '@logos/logo_yard_sale.svg'
 import AppContext from '../context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg'
+import useGetProducts from "../hooks/useGetProducts";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -28,16 +29,16 @@ const Header = () => {
             <a href="/">All</a>
           </li>
           <li>
-            <a href="/">Clothes</a>
+            <a href="/clothes" >Clothes</a>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <a href="/electronic">Electronics</a>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <a href="/furniture">Furnitures</a>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <a href="/toys">Toys</a>
           </li>
           <li>
             <a href="/">Others</a>
