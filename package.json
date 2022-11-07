@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "react",
@@ -38,6 +39,8 @@
   },
   "devDependencies": {
     "babel-loader": "^8.2.5",
-    "file-loader": "^6.2.0"
-  }
+    "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0"
+  },
+  "homepage": "http://sisasfx.github.io/react-shop"
 }
