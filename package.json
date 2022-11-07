@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "react eshop",
   "main": "src/index.js",
+  "homepage": "http://sisasfx.github.io/react-shop",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
@@ -41,6 +42,5 @@
     "babel-loader": "^8.2.5",
     "file-loader": "^6.2.0",
     "gh-pages": "^4.0.0"
-  },
-  "homepage": "http://sisasfx.github.io/react-shop"
+  } 
 }
