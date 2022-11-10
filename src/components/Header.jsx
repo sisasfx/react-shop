@@ -7,7 +7,7 @@ import logo from '@logos/logo_yard_sale.svg'
 import AppContext from '../context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg'
 import useGetProducts from "../hooks/useGetProducts";
-
+import {Link} from 'react-router-dom'
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -26,22 +26,22 @@ const Header = () => {
         <img src={logo} alt="logo" className="nav-logo" />
         <ul>
           <li>
-            <a href="/">All</a>
+            <a Link to={"/"}>All</a>
           </li>
           <li>
-            <a href="/clothes" >Clothes</a>
+            <a Link to={"/clothes"} >Clothes</a>
           </li>
           <li>
-            <a href="/electronic">Electronics</a>
+            <a Link to={"/electronic"}>Electronics</a>
           </li>
           <li>
-            <a href="/furniture">Furnitures</a>
+            <a Link to={"/furniture"}>Furnitures</a>
           </li>
           <li>
-            <a href="/toys">Toys</a>
+            <a Link to={"/toys"}>Toys</a>
           </li>
           <li>
-            <a href="/">Others</a>
+            <a Link to={"/"}>Others</a>
           </li>
         </ul>
       </div>
